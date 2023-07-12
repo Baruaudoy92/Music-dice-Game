@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    margin-bottom: 40px;
+    background-image: url(img/wp7838015.jpg);
+    
+}
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    font-size: 2em;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    opacity: 0.6;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar img {
+    height: 5em;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+.navbar ul li {
+    padding-left: .5em;
+}
+
+.navbar li a {
+    font-size: 3ex;
+    display: block;
+    padding: 0.2em;
+}
+
+.mainStyle{
+    color: rgb(93, 11, 97);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.subMenuList {
+    display: none;
+    position: relative;
+    z-index: 100000;
+}
+
+.subStyle {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: var(--carbon);
+    color: #fff;
+}
+
+.subMenu:hover .subMenuList{
+    position: absolute;
+    display: block;
+    z-index: 1000;
+}
+.user{
+    width: 100%;
+    font-size: small;
+}
+
+/*Main*/
+
+.content{
+    margin:80px auto;
+    width: 60px;
+    height: 60px;
+    position:relative;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .flame{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(1.5,1.5);
+  }
+  
+  .yellow{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:brown;
+    box-shadow: 0px 0px 9px 4px rgb(21, 64, 194);
+  }
+  
+  .orange{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:rgb(225, 20, 61);
+    box-shadow: 0px 0px 9px 4px rgb(216, 246, 68);
+  }
+  
+  .red{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:rgb(136, 77, 28);
+    box-shadow: 0px 0px 5px 4px rgb(91, 6, 79);
+  }
+  
+  .white{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/70baea8c9db6edc5a6dda8816b632447.jpg);
+    box-shadow: 0px 0px 9px 4px rgb(221, 210, 194);
+  }
+  
+  .circle{
+    border-radius: 50%;
+    position:absolute;  
+  }
+  
+  .blue{
+    width: 10px;
+    height: 10px;
+    left:25px;
+    bottom:-25px; 
+    background: rgb(9, 175, 204);
+    box-shadow: 0px 0px 15px 10px rgb(112, 12, 129);
+  }
+  
+  .black{
+    width: 40px;
+    height: 40px;
+    left:10px;
+    bottom:-60px;  
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px 10px #fff;
+    background-image: url(img/wp9150350.jpg);
+  }
+  
+  @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  }
+
+.dice{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    background-image: url(img/wp4207929.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    border-radius: 40px;
+}
+.wiki{
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+.para{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    background-color: rgb(31, 188, 49);
+    opacity: 0.5;
+}
+.history{
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+.para1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    background-color: aquamarine;
+    opacity: 0.5;
+   
+}
+.use{
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+.para2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    background-image: url(img/71882e6be92d3b00e42cf4b8f7d72e99.jpg);
+    opacity: 0.5;
+}
+/* FOOTER */
+
+#footerDiv {
+    font-size: 3ex;
+    text-align: center;
+    background-image: url(img/71882e6be92d3b00e42cf4b8f7d72e99.jpg);
+
+    z-index: 300;
+    margin-top: 35px;
+    right: 0px; left: 0px;
+    padding-top: 1ex;
+}
+
+.copyrights .references {
+    font-size: 0.5em;
+    color: #fff;
+}

@@ -1,0 +1,22 @@
+*{
+    color: #fff;
+    color: rgb(93, 11, 97);
+    color: (255, 0, 0) blue;
+    color: red;
+    color: green;
+    background:OrangeRed;
+    background:rgb(228, 189, 15);
+    color:#29c4c4;
+    color: gold;
+    color: black;
+}
+*{
+    font-weight: bold;
+    font-style: italic;
+    position:absolute;
+    position:relative;  
+}
+*{
+    background-image: url(img/wp9150342.jpg);
+    background-image: url(img/wp7838015.jpg);
+}
